@@ -33,7 +33,7 @@ int main()
 	{
 		case 1:			//如果接收为1，则白棋胜利
 			printf("=======================================\n");
-			printf("		  White Win! Steps:%d\n",Step_Number);
+			printf("          White Win! Steps:%d\n",Step_Number);
 			printf("=======================================\n");
 			break;
 		case 2:			//如果接收为2，则黑旗胜利
