@@ -33,17 +33,17 @@ int main()
 	{
 		case 1:
 			printf("=======================================\n");
-			printf("             White Win!\n");
+			printf("		  White Win! Steps:%d\n",Step_Number);
 			printf("=======================================\n");
 			break;
 		case 2:
 			printf("=======================================\n");
-			printf("             Black Win!\n");
+			printf("          Black Win! Steps:%d\n",Step_Number);
 			printf("=======================================\n");
 			break;
 		case 3:
 			printf("=======================================\n");
-			printf("               Draw!\n");
+			printf("              Draw! Steps:%d\n",Step_Number);
 			printf("=======================================\n");
 	}
 	return 0;
@@ -104,7 +104,7 @@ int CheckerBoard_Play()
 		if(!(Step_Number%2))
 		{
 			printf("=======================================\n");
-			printf("    Block:x    Steps:%d\n",Step_Number+1);
+			printf("    Black:x    Steps:%d\n",Step_Number+1);
 			printf("=======================================\n");
 		}
 		else
@@ -120,7 +120,7 @@ int CheckerBoard_Play()
 		if(position.x==0||position.x>=MAX-1||position.y==0||position.y>=MAX-1)
 		{
 			printf("=======================================\n");
-			printf("          Beyond the Boundary!\n");
+			printf("         Beyond the Boundary!\n");
 			printf("=======================================\n");
 		}
 		else if(CheckerBoard[position.x][position.y]=='.')
